@@ -42,7 +42,7 @@ class CashRegister
     quantity = data[1]
     @items.each do |key, data|
       count = 0
-      while count < quantity
+      while count < quantity do
       list << key
       count += count
     end
