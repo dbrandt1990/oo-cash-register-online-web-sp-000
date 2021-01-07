@@ -46,6 +46,7 @@ class CashRegister
       list << key
       count += count
     end
+    end
     list
   end
   
