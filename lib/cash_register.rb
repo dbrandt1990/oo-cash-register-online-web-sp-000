@@ -5,6 +5,7 @@ class CashRegister
     @total = total
     @discount = discount
     @items = {}
+    puts @total
   end
   
   def total
@@ -15,11 +16,9 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     price = price * quantity
     @total =  @total.to_f + price
-    
     @items[title] = []
     @items[title] << price
     @items[title] << quantity
-    # @items.fill(title, @items.size, quantity)
   end
 
   def apply_discount
