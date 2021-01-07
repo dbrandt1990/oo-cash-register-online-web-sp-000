@@ -15,15 +15,14 @@ class CashRegister
     if quantity > 0
       price = price * quantity
     end
-    total_dollars = @total.to_f 
     @total =  price
-    puts "total #{@total}"
+    puts "add_item total #{@total}"
   end
 
   def apply_discount
     puts "discount #{@discount}"
     puts "total discount #{@total}"
-    total = @total.to_f-20
+    total = @total.to_f
     discount = @discount.to_f / 100
     reduce = total * discount
     if @discount == 0 
