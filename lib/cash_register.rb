@@ -14,8 +14,7 @@ class CashRegister
     puts "price #{price}"
     if quantity > 0
       price = price * quantity
-    else 
-    price = price
+    end
     total_dollars = @total.to_f 
     total_dollars += price
     @total = total_dollars
