@@ -15,9 +15,10 @@ class CashRegister
     price = price * quantity
     @total =  price
     count = 0 
-    while count < quantity
+    while count < quantity do
     @items << title
     count ++
+  end
   end
 
   def apply_discount
