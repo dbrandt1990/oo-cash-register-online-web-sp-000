@@ -11,12 +11,14 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 0)
+    puts "price #{price}"
     if quantity > 0
       price = price * quantity
     end
     total_dollars = @total.to_f 
     total_dollars += price
     @total = total
+    puts "total #{@total}"
   end
 
   def apply_discount
