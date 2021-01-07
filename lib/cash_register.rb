@@ -15,6 +15,7 @@ class CashRegister
     puts "price #{price}"
     price = price * quantity
     @total =  price
+    
     @items << title
     puts "add_item total #{@total}"
   end
