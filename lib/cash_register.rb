@@ -22,7 +22,7 @@ class CashRegister
 
   def apply_discount
     puts "discount #{@discount}"
-    puts "total di #{@total}"
+    puts "total discount #{@total}"
     total = @total.to_f-20
     discount = @discount.to_f / 100
     reduce = total * discount
