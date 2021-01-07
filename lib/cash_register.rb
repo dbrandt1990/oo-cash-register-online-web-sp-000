@@ -23,7 +23,7 @@ class CashRegister
     total = @total.to_f - 20
     discount = @discount.to_f / 100
     reduce = total * discount
-    puts discount
+    puts reduce
     if discount == 0 
     return "There is no discount to apply." 
     end
