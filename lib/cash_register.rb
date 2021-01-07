@@ -8,10 +8,12 @@ class CashRegister
   end
   
   def total
-    @total.map do |key, data|
+    total =  []
+    @total.each do |key, data|
       quantity = data[1]
-      key * quantity
+      total << key * quantity
     end
+    total
   end
   
   def add_item(title, price, quantity = 1)
