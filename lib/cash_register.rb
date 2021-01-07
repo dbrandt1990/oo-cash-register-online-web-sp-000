@@ -8,6 +8,7 @@ class CashRegister
   end
   
   def total
+    puts @total
     @total
   end
   
@@ -41,7 +42,7 @@ class CashRegister
     list = []
     @items.each do |key, data|
       quantity = data[1]
-      list.fill(key,list.size,quantity)
+      list.fill(key, list.size, quantity)
     end
     list
   end
