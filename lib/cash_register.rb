@@ -8,7 +8,9 @@ class CashRegister
   end
   
   def total
-    @total.keys
+    @total.map do |key, data|
+      
+    end
   end
   
   def add_item(title, price, quantity = 1)
