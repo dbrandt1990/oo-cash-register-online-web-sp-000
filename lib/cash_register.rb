@@ -24,9 +24,9 @@ class CashRegister
     puts "total discount #{@total}"
     total = @total.to_f
     discount = @discount.to_f / 100
-    reduce = total * discount
+    reduced = total * discount
     if @discount == 0 
-      @total = total
+      @total = reduced
      return "There is no discount to apply."
     else
       @total = total - reduce
