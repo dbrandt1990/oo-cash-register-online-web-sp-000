@@ -12,14 +12,13 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    puts "price #{price}"
     price = price * quantity
     @total =  price
-    count = 0
-    do  @items << title 
+    count = 0 
     while count < quantity
-    count += count
-    puts "add_item total #{@total}"
+    @items << title
+    count ++
+  end
   end
 
   def apply_discount
