@@ -20,10 +20,12 @@ class CashRegister
   end
 
   def apply_discount
-    total = @total
-    discount = @discount
-    apply = (100 - discount)/100
-     puts apply
-    return @total * apply
+    total = @total.to_f
+    discount = @discount.to_f
+    puts discount
+    puts total
+     apply = (100 - discount)/100
+     puts total * apply
+    return total * apply
   end
 end
