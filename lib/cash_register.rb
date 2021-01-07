@@ -16,8 +16,7 @@ class CashRegister
       price = price * quantity
     end
     total_dollars = @total.to_f 
-    total_dollars += price
-    @total = total_dollars
+    @total = total_dollars + price
     puts "total #{@total}"
   end
 
