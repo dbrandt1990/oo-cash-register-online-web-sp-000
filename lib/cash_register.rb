@@ -14,6 +14,8 @@ class CashRegister
     if quantity > 0
       price = price * quantity
     end
+    puts price
+    puts @total
     total_dollars = @total.to_f 
     total_dollars += price
     @total = total_dollars
