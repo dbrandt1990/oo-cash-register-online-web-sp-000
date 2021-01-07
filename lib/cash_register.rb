@@ -1,8 +1,8 @@
 class CashRegister
-  attr_accessor :total, :discount
+  attr_accessor :total, :discount, :price, :
   
-  def initialize(total = 0, discount = 20)
-    @total = total
+  def initialize(discount = 0)
+    @total = 0
     @discount = discount
     @items = {}
     puts "init total #{@total}"
