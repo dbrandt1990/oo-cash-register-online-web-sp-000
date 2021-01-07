@@ -19,6 +19,7 @@ class CashRegister
     count = 0 
     while count < quantity do
     @items << title
+    count +=  count
   end
   end
 
