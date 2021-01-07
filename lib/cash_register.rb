@@ -18,7 +18,7 @@ class CashRegister
     while count < quantity
     @items << title
     count ++
-  end
+   end
   end
 
   def apply_discount
