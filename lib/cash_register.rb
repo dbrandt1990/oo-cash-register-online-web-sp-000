@@ -18,6 +18,7 @@ class CashRegister
     @items[title] = []
     @items[title] << price
     @items[title] << quantity
+    puts @items
     # @items.fill(title, @items.size, quantity)
   end
 
