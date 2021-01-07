@@ -42,6 +42,7 @@ class CashRegister
     @items.each do |key, data|
       list << key
     end
+    list
   end
   
   def void_last_transaction
