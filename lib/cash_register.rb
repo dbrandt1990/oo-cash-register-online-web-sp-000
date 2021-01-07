@@ -38,8 +38,9 @@ class CashRegister
   end
   
   def items
-    
+    list = []
     @items.each do |key, data|
+      list << key
     end
   end
   
