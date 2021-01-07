@@ -8,12 +8,7 @@ class CashRegister
   end
   
   def total
-    total =  []
-    @total.each do |key, data|
-      quantity = data[1]
-      total << key * quantity
-    end
-    total
+    @total
   end
   
   def add_item(title, price, quantity = 1)
@@ -43,7 +38,9 @@ class CashRegister
   end
   
   def items
-    @items
+    
+    @items.each do |key, data|
+    end
   end
   
   def void_last_transaction
