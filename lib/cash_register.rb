@@ -24,7 +24,7 @@ class CashRegister
     total = @total.to_f
     discount = @discount.to_f / 100
     reduced = total * discount
-    if @discount  
+    if @discount == nil 
       @total = reduced.to_i
      return "There is no discount to apply."
     else
