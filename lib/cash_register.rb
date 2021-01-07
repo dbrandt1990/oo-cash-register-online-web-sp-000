@@ -20,7 +20,6 @@ class CashRegister
     @total = total_dollars
     puts "total #{@total}"
   end
-  end
 
   def apply_discount
     puts "discount #{@discount}"
