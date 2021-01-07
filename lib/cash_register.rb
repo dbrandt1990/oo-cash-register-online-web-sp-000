@@ -25,6 +25,6 @@ class CashRegister
     apply = (100 - discount)/100
     total_float = total * apply
     @total = total_float.to_i
-    puts "After the discount, the total comes to #{@total}"
+    puts "After the discount, the total comes to $#{@total}"
   end
 end
