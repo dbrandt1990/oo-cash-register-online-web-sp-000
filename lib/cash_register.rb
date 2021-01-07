@@ -39,8 +39,8 @@ class CashRegister
   
   def items
     list = []
-    quantity = data[1]
     @items.each do |key, data|
+      quantity = data[1]
       count = 0
       while count < quantity do
       list << key
