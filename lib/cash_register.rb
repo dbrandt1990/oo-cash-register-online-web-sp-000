@@ -24,7 +24,7 @@ class CashRegister
     discount = @discount
     puts discount
     puts total
-     apply = (100 - discount)/100
+     apply = (100 - discount.to_f)/100
      puts apply
     @total =  total * apply
   end
