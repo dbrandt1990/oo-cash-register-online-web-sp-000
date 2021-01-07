@@ -15,8 +15,10 @@ class CashRegister
     puts "price #{price}"
     price = price * quantity
     @total =  price
-    
-    @items << title
+    count = 0
+    do  @items << title 
+    while count < quantity
+    count += count
     puts "add_item total #{@total}"
   end
 
