@@ -18,6 +18,7 @@ class CashRegister
   end
 
   def apply_discount
+    puts @total
     total = @total.to_f - 20
     discount = @discount.to_f / 100
     reduced = total * discount
