@@ -5,7 +5,7 @@ class CashRegister
     @total = total
     @discount = discount
     @items = {}
-    puts @total
+    puts "init total #{@total}"
   end
   
   def total
