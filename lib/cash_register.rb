@@ -25,7 +25,7 @@ class CashRegister
     puts discount
     puts total
      apply = (100 - discount)/100
-     puts total * apply
+     puts apply
     @total =  total * apply
   end
 end
