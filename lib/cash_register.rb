@@ -9,7 +9,8 @@ class CashRegister
   
   def total
     @total.map do |key, data|
-      
+      quantity = data[1]
+      key * quantity
     end
   end
   
