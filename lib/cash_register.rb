@@ -16,7 +16,6 @@ class CashRegister
     price = price * quantity
     @total =  price
     @items << title
-    @items = @items.uniq
     puts "add_item total #{@total}"
   end
 
