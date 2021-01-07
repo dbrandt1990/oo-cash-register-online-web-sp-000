@@ -4,19 +4,19 @@ class CashRegister
   def initialize(total = 0, discount = 20)
     @discount = discount
     @total = total
-    @items = []
+    @items = {}
   end
   
   def total
     @total
   end
   
-  def add_item(title, price, quantity = 0)
+  def add_item(title, price, quantity = 1)
     puts "price #{price}"
-    if quantity > 0
-      price = price * quantity
-    end
+    price = price * quantity
     @total =  price
+    @items[title] = []
+    @items[title] << price
     puts "add_item total #{@total}"
   end
 
