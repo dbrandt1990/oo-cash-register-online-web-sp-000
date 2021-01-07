@@ -16,7 +16,8 @@ class CashRegister
     @total =  @total.to_f + price
     
     @items[title] = []
-    @items[title] << price, quantity
+    @items[title] << price
+    @items[title] << quantity
     # @items.fill(title, @items.size, quantity)
   end
 
