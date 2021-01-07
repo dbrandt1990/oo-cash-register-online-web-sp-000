@@ -22,7 +22,7 @@ class CashRegister
   def apply_discount
     total = @total.to_f 
     discount = @discount.to_f / 100
-    reduce = total - discount
+    reduce = total * discount
     puts reduce
     if discount == 0 
     return "There is no discount to apply." 
