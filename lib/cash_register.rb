@@ -28,7 +28,7 @@ class CashRegister
       @total = reduced.to_i
      return "There is no discount to apply."
     else
-      @total = reduced.to_i
+      @total = total - reduced
       puts "total discount #{@total}"
       return"After the discount, the total comes to $#{@total.to_i}."
     end
